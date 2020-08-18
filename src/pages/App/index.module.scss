@@ -1,5 +1,12 @@
-.home {
+.app {
   text-align: center;
   border: 2px solid #f0f;
-  padding-bottom: 100px;
+  &__footer {
+    padding: 20px;
+    :global {
+      a {
+        margin-right: 20px;
+      }
+    }
+  }
 }

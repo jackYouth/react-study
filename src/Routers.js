@@ -1,19 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// import loadable from "react-loadable";
+import loadable from "@components/loadable";
 
-import App from "./pages/App";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Dashboard from "./pages/Dashboard";
+const App = loadable(() => import(/* webpackChunkName: "app" */ "@pages/App"));
+const Home = loadable(() =>
+  import(/* webpackChunkName: "home" */ "@pages/Home")
+);
+const About = loadable(() =>
+  import(/* webpackChunkName: "about" */ "@pages/About")
+);
+const Dashboard = loadable(() =>
+  import(/* webpackChunkName: "dashboard" */ "@pages/Dashboard")
+);
 
 export default function BasicExample() {
   return (
     <Router>
       <App>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/home">
             <Home />
           </Route>
           <Route path="/about">
