@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './index.module.scss';
 
-const a = 'test';
+// const a = 'tesst';
 
 export default function Dashboard() {
   return (
