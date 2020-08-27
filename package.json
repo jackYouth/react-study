@@ -16,6 +16,7 @@
   },
   "scripts": {
     "precommit": "npm run test-eslint",
+    "prepush": "npm run test-eslint",
     "test-eslint": "eslint src/**/*.js",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
