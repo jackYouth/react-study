@@ -3,7 +3,6 @@ import React from "react";
 import styles from "./index.module.scss";
 
 const a = 'test';
-const a = 2;
 
 export default function Dashboard() {
   return (
