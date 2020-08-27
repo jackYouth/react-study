@@ -1,0 +1,13 @@
+**/*.svg
+/dist
+/public
+Dockerfile*
+.dockerignore
+.DS_Store
+.eslintignore
+.gitignore
+.prettierignore
+*.lock
+*.png
+yarn-error.log
+docker

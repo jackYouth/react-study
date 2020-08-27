@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": ["react-app"], // eslint扩展规则
+  "extends": ["react-app", "plugin:prettier/recommended"], // eslint扩展规则
   "parserOptions": {
     "ecmaVersion": 7, // 指定es版本为7
     "sourceType": "module", // 支持export和import来导出并引用文件
