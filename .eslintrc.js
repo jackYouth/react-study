@@ -1,10 +1,10 @@
 module.exports = {
   "extends": ["airbnb"], // eslint扩展规则
   "parserOptions": {
-    "ecmaVersion": 7,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
+    "ecmaVersion": 7, // 指定es版本为7
+    "sourceType": "module", // 支持export和import来导出并引用文件
+    "ecmaFeatures": { // 添加ES特性支持，使之能够识别ES6语法
+      "jsx": true // 支持jsx
     }
   },
   "parser": "babel-eslint",// 解决ES6 import会报错
