@@ -2,8 +2,6 @@ import React from 'react';
 
 import styles from './index.module.scss';
 
-// const a = 'tesst';
-
 export default function Dashboard() {
   return (
     <div className={styles.dashboard}>
