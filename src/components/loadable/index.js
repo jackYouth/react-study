@@ -1,7 +1,7 @@
-import React from "react";
-import loadable from "react-loadable";
+import React from 'react';
+import loadable from 'react-loadable';
 
-import styles from "./index.module.scss";
+import styles from './index.module.scss';
 
 //通用的过场组件
 const LoadingComponent = () => {

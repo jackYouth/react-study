@@ -8,5 +8,5 @@ module.exports = {
   "trailingComma": "all", // 数组尾逗号。
   "bracketSpacing": false, // {foo: xx}还是{ foo: xx }
   "jsxBracketSameLine": false, //看官网
-  "arrowParens": "always" //箭头函数参数是否使用（）
+  "arrowParens": "avoid" //箭头函数参数是否使用（）
 }

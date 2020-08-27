@@ -3,7 +3,7 @@ const path = require('path');
 
 const AntdDayjsWebpackPlugin = require('antd-dayjs-webpack-plugin');
 
-const addProxy = () => (config) => {
+const addProxy = () => config => {
   config.proxy = {
     '/api': {
       target: 'http://yapi.ifchange.com',
