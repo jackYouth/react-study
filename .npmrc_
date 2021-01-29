@@ -1,0 +1,6 @@
+registry=http://nexus.pajk-ent.com/repository/npm-all/
+sass_binary_site=http://snow.pajk-ent.com/npm/mirrors/node-sass/
+disturl=http://snow.pajk-ent.com/npm/mirrors/node/
+phantomjs_cdnurl=http://snow.pajk-ent.com/npm/mirrors/phantomjs/
+electron_mirror=http://snow.pajk-ent.com/npm/mirrors/electron/
+fse_binary_host_mirror=http://snow.pajk-ent.com/npm/mirrors/fsevents/

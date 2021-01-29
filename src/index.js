@@ -5,6 +5,7 @@ import * as serviceWorker from "./serviceWorker"
 
 import { HashRouter, Switch, Route } from "react-router-dom"
 import App from "./App"
+import Lottery from "./Lottery"
 
 const EXAMPLE_ROUTES_NAME = ["useSelections"]
 
@@ -16,11 +17,13 @@ ReactDOM.render(
         <Route path="/example">
           {EXAMPLE_ROUTES_NAME.map((path) => (
             <Route
+              key={path}
               path={`/example/${path}`}
               component={require(`./hooks/${path}/demo`).default}
             />
           ))}
         </Route>
+        <Route path="/lottery" component={Lottery} />
       </Switch>
     </Switch>
   </HashRouter>,

@@ -1,0 +1,159 @@
+.lottery {
+    padding: 20px 20px;
+    // background: url(./imgs/bg.jpg) repeat-y center center;
+    // background-size: 100% auto;
+    background-color: #581a1a;
+    min-height: 100%;
+    box-sizing: border-box;
+
+    &__banner {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    &__text {
+        width: calc(100% + 10px);
+        margin-bottom: 10px;
+        padding-top: 20px;
+        overflow: hidden;
+        margin-right: -10px;
+
+        &__item {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            height: 20%;
+            font-size: 24px;
+            color: #fff;
+            position: relative;
+            border-radius: 15px;
+            float: left;
+
+            span {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY((-50%));
+                font-weight: bolder;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            em {
+                position: absolute;
+                right: -5px;
+                top: -5px;
+                display: block;
+                width: 20px;
+                line-height: 20px;
+                text-align: center;
+                border-radius: 100%;
+                background-color: #fff;
+                font-size: 12px;
+                color: #333;
+            }
+        }
+    }
+
+    &__btn {
+        background: url(./imgs/footer.png) no-repeat center center;
+        background-size: cover;
+        background-color: none !important;
+        margin: 0 auto;
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        width: 254px;
+        line-height: 45px;
+        height: 50px;
+
+        &::before {
+            border: none !important;
+        }
+    }
+
+    &__share {
+        background: #fff;
+        width: 180px;
+        margin: 0 auto;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    &__rules {
+        padding: 5px 20px 20px;
+        background-color: #fff;
+        color: #666;
+        border-radius: 10px;
+        margin-top: 20px;
+
+        &__title {
+            text-align: center;
+            color: #333;
+            font-size: 18px;
+        }
+
+        &__item {}
+    }
+}
+
+.lotteryModal {
+    border-radius: 10px;
+    background-color: #581a1a;
+    padding: 60px 30px;
+
+    &__wrapper {
+        transform-style: preserve-3d;
+
+        :global {
+            .am-modal-title {
+                background-image: -webkit-linear-gradient(bottom, #fd8403, yellow);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 22px;
+                font-weight: bolder;
+            }
+
+            .am-modal-content {
+                background: none;
+            }
+
+            .am-modal-footer {
+                background: url(./imgs/footer.png) no-repeat center center;
+                background-size: cover;
+                width: 205px;
+                height: 40px;
+                margin: 0 auto;
+
+                .am-modal-button {
+                    font-size: 18px;
+                    font-weight: bolder;
+                    color: #fff;
+                    line-height: 35px;
+                    height: 35px;
+
+                    &::before {
+                        height: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &__textContainer {
+        margin: 0 auto;
+        width: 100px;
+        transform-origin: center;
+    }
+
+    &__textItem {
+        transform: scale(1.2);
+        float: unset;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
